@@ -91,6 +91,21 @@ fill: function(d) { return "rgb(0, 0, " + (d * 10) + ")"; }
 });
 
 
+var circle = d3.select("body")
+.append("svg")
+.attr("width", 500)
+.attr("height", 200);
+
+
+circle.append("circle")        // attach a circle
+    .attr("cx", 200)           // position the x-centre
+    .attr("cy", 100)           // position the y-centre
+    .attr("r", 50)             // set the radius
+    .style("fill-opacity", .2) // set the fill opacity
+    .style("stroke", "black")    // set the line colour
+    .style("fill", "grean");   // set the fill colour
+
+
 function draw(data) {
 	d3.select("body")
 	.append("div")
