@@ -17,9 +17,38 @@
 
 				display: block;
 			}
+			
+
+body {
+  font: 10px sans-serif;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.x.axis path {
+  display: none;
+}
+
+.line {
+  fill: none;
+  stroke: steelblue;
+  stroke-width: 1.5px;
+}
+
+
 		</style>
 	</head>
 	<body>
+		<h1>D3 test project</h1>
+		
+
+	</body>
+
 		<script type="text/javascript">
 			Modernizr.load({
 				test : Modernizr.svg && Modernizr.inlinesvg,
@@ -27,8 +56,5 @@
 			});
 
 		</script>
-		<h1>D3 test project</h1>
-		
-
-	</body>
+		<script src="scripts/line-chart.js"></script>
 </html>
